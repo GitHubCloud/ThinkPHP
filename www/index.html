@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ThinkPHP</title>
+    <style type="text/css">
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    iframe{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    .box{
+        width: 360px;
+        background: #dedede;
+    }
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+    <iframe src="http://192.168.10.9/"></iframe>
+    <div class="box" id="box"></div>
+</body>
+</html>
+<script type="text/javascript">
+window.onload = function (e) {
+    var iframe = document.getElementsByTagName("iframe").item(0);
+    var docHeight = window.innerHeight + (window.screen.availHeight - window.innerHeight * Math.floor(window.screen.availHeight / window.innerHeight)) / Math.floor(window.screen.availHeight / window.innerHeight);
+    // var docHeight = window.innerHeight;
+    var docWidth = window.innerWidth;
+    iframe.style.height = docHeight + "px";
+    iframe.style.width = docWidth + "px";
+}
+</script>
